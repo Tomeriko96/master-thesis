@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[x11names,table]{xcolor}
+\usepackage{blindtext}
+\usepackage[titletoc]{appendix}
+\usepackage[nottoc]{tocbibind}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{automata, positioning, arrows, calc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{pifont}
+\usepackage[TS1,T1]{fontenc}
+\usepackage{array, booktabs}
+\usepackage{caption}
+\DeclareCaptionFont{blue}{\color{LightSteelBlue3}}
+
+
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+\numberwithin{algorithm}{section}
+
+\title{Self-organized task allocation for swarms in a Real Time Strategy game environment}
+\author{Tomer Iwan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\input{./sections/abstract.tex}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\listofalgorithms
+\addcontentsline{toc}{section}{List of Algorithms}
+\newpage
+
+\pagenumbering{arabic}
+\input{./sections/introduction.tex}
+\input{./sections/background.tex}
+\input{./sections/methodology.tex}
+\input{./sections/results.tex}
+\input{./sections/discussion.tex}
+\input{./sections/conclusion.tex}
+
+\newpage
+\begin{appendices}
+    \input{./sections/appendix.tex}
+\end{appendices}
+\newpage
+
+\bibliographystyle{unsrt}
+\bibliography{./references}
+
+\end{document}

@@ -1,0 +1,18 @@
+\begin{algorithm}[H]
+    \caption{The general scheme of an Evolutionary Algorithm}
+    \begin{algorithmic}[1]
+        \State Initialise population with random candidate solution;
+        \State Evaluate each candidate;
+        \While{Termination condition not satisfied}
+            \State Select parents;
+            \State Recombine pairs of parents;
+            \State Mutate the resulting offspring;
+            \State Evaluate new candidates;
+            \State Select individuals for the next generation;
+        \EndWhile
+
+    \end{algorithmic}
+    \label{algorithm:evolutionary}
+\end{algorithm}
+% https://www.cs.vu.nl/~gusz/ecbook/Eiben-Smith-Intro2EC-Ch2.pdf
+% fig 2.1

@@ -1,0 +1,22 @@
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+
+\begin{table}[H]
+    \centering
+    \renewcommand\arraystretch{1.4}\arrayrulecolor{LightSteelBlue3}
+    \captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
+    \caption{Timeline of game AI}\vskip -1.5ex
+    \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{5cm}}
+    \toprule
+    \addlinespace[1.5ex]
+    1956 & The founding event of AI at The Dartmouth Summer Research Project on Artificial Intelligence\\
+    1992 & \textbf{Backgammon}: TD-Gammon was developed, relying on ANN\\
+    1994 & \textbf{Checkers}: Chinook defeats Marion Tinsley\\
+    1996 & \textbf{Chess}: Garry Kasparov defeats IBM's Deep Blue (4 - 2)\\
+    1997 & \textbf{Chess}: IBM's Deep Blue defeats Garry Kasparov (3.5 - 2.5)\\
+    2014 & Google Deepmind uses raw pixel input to play Atari games\\
+    2016 & \textbf{Go}: AlphaGo defeats Lee Sedol (4 - 1)\\
+    2017 & \textbf{Go}: AlphaGo defeats Ke Jie (3 - 0)\\
+    \end{tabular}
+    \label{tab:timeline}
+\end{table}

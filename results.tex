@@ -1,0 +1,122 @@
+\section{Results} \label{section:results}
+% Results: simple past and present tense should be employed here, 
+% but when you refer to figures and tables you use the present tense, 
+% since they continue to exist in your paper ;); 
+% you can mix active and passive voice.
+\subsection*{Experiment 1: Degree of laziness}
+
+The first experiment looks into the influence of offline allocation of tasks.
+The task considered are foraging and staying.
+The allocation is determined by a so-called laziness percentage.
+This percentage decides how many agents should passively stay around the base, 
+and the other agents are actively foraging for food.
+For example, in a swarm of 20 agents, a percentage of 0.1 indicates that two agents stay behind while the remaining 18 forage.
+Accordingly, 50\% indicates an equal allocation in numbers for the two tasks; i.e. ten agents each.
+To determine the optimal ratio of staying to foraging in a swarm, 
+the following experiment is proposed.
+
+For each ratio ranging from 0 to 1, with 0.1 increments, the simulation is run.
+The experiments are repeated 20 times for each strategy, after which an average is taken.
+Two metrics are devised to measure the effectiveness of the strategies.
+
+\begin{itemize}
+    \item The average number of agents at the end of the simulation, for each laziness percentage.
+    \item The average health of the remaining agents at the end of the simulation, for each laziness percentage.
+\end{itemize}
+
+
+% TODO: have a look at the results in kendall2004scripting.pdf
+\textcolor{purple}{
+    \blindtext
+    \blindtext
+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graphics/results/lazyVSnum_agents.png}
+    \caption{The fitness function of the population}
+    \label{fig:lazy_vs_num_agents}
+\end{figure}
+
+\textcolor{purple}{
+    \blindtext
+    \blindtext
+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graphics/results/lazyVSavg_health.png}
+    \caption{Survival rate of the population}
+    \label{fig:lazy_vs_average_health}
+\end{figure}
+
+Figure \ref{fig:lazy_vs_num_agents} shows the average number of surviving agents for each strategy over the twenty runs.
+Observed can be that a population comprised of solely lazy agents, those that do not forage at all,
+lead to the worst survival rate.
+
+In each of the twenty runs, no surivors were left.
+This is logical, as the only way to survive is by foraging food.
+
+By this logic however, one could assume that a population, consisting of foragers only, would fare the best.
+This, as can be observed, has proven to be an incorrect assumption.
+
+The resulting boxplot shows that the spread is large.
+This can be addressed to the stochastic spawning of the mushrooms.
+Some runs, may have seen enough mushrooms to allow many agents to survive, while other runs did not.
+
+The very best strategy, according to this metric, would be 0.9, in which 18 members stay behind, while two look for food.
+In all but one simulation, did every member survive.
+
+
+Figure \ref{fig:lazy_vs_average_health} on the other hand shows the average health of the swarm at the end of the run for each strategy.
+A measurement error can be observed in the strategy where 30 per cent of the swarm is lazy, as an average health of over 100 was reached at the end of the simulation.
+This could be caused by an agent dying in the last moment of the simulation, and the calculation of the average health not taking it into account quick enough.
+
+\textcolor{blue}{---
+LIMITED CARRYING CAPACITY
+---}
+
+\textcolor{purple}{
+    \blindtext
+    \blindtext
+}
+
+\subsection*{Experiment 2: selfish vs unselfish}
+
+In Figure \ref{fig:selfish_vs_num_agents} the number of surviving agents are shown for the selfish versus unselfish strategy.
+A very clear result is obtained, in which the unselfish strategies far outperforms the selfish strategy.
+However, the results obtained vary a lot in the unselfish group, which can directly be attributed to the limited availability of food.
+The simulation also requires that sharing of the food only occurs if agents are close to the base.
+In the case that every agent is actively searching for food to share, 
+there will not always be a moment that there are many agents back at the base, as the mechanism is activated when a food item is collected.
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graphics/results/selfishVSnum_agents.png}
+    \caption{The surviving number of agents over 20 runs when either selfish or unselfish}
+    \label{fig:selfish_vs_num_agents}
+\end{figure}
+
+\textcolor{purple}{
+    \blindtext
+    \blindtext
+}
+
+In Figure \ref{fig:selfish_vs_average_health} the average health achieved by the surviving agents is plotted.
+Observed can be that there is more variety in the selfish population.
+This can be directly attributed to the lower survival rate.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graphics/results/selfishVSavg_health.png}
+    \caption{The average health of the surviving number of agents over 20 runs when either selfish or unselfish}
+    \label{fig:selfish_vs_average_health}
+\end{figure}
+
+\textcolor{purple}{
+    \blindtext
+    \blindtext
+}

@@ -1,0 +1,126 @@
+% Introduction: use a mixture of present and past tense; 
+% the present tense is applied when you are talking about something that is always true; 
+% the past tense is used for earlier research efforts, either by your own or by another group. 
+% If the time of demonstration is unknown or not important, use the present perfect. 
+% For the concluding statements of your introduction use the simple past; 
+% you may use the past perfect, when you talk about something that was true in the past but is no longer so.
+\section{Introduction} \label{section:introduction}
+This thesis is framed within the general context of Artificial Intelligence (AI), 
+focusing on the development of swarm intelligence (SI) in multi-agent games.
+Early AI research concerned itself with the development of computational systems capable of displaying human-level intelligence.
+The aim was to apply this intelligence in tasks of problem solving and decision making.
+Such tasks were presented to the machines as a set of formal mathematical notations, 
+which were able to be solved by means of symbol manipulation.
+Due to this highly formalized framing of the problems, 
+early AI was able to succeed in a large number of tasks.
+
+Over the last couple of decades, the field has been thriving, 
+with development happening at an increasing pace.
+The efforts of AI research have not been limited to academia, 
+as an increasing number of areas, unrelated to computer science, have adopted AI techniques, 
+in the hope of increased performances.
+The rapid advancements can be attributed to two main driving forces.
+First and foremost, it is due to novel algoirthsm devides by the research community.
+Secondly, the computational power of hardware, both in general and available to research, has increased, 
+which allowed researchers to try increasingly more complex solutions.
+These factors have allowed researchers to develop machines that have reached human-level intelligence and beyond in many fields, 
+such as game-playing.
+
+\textbf{Games}, in particular board games, have long been considered as the perfect research environment for AI methods.
+This is partly due to them being a complex human activity.
+However, the main reason is that they offer environments which are formal and highly constrained, 
+suitable for decision making tasks. 
+
+Game AI (GAI) is a sub-field of AI, which came to be quickly after AI itself.
+It is a broad field, which is concerned with the challenge of developing AI for playing games at a high level, 
+but also ventures into high level application, such as the automated generation of game aspects.
+
+With the simultaneous rapid development of AI and the introduction of video games, 
+the area of research has seen an overwhelming number of advancements in the last couple of years.
+An early breakthrough occurred in the 1950s, when 
+Shannon \cite{shannon1950xxii} 
+developed a program for playing chess.
+Other multi-player board games have been researched, for example, 
+Othello \cite{buro2002improving}, 
+Hex \cite{anshelevich2002hierarchical}, 
+Shogi \cite{iida2002computer}, 
+Go \cite{muller2002computer}, 
+Backgammon \cite{tesauro2002programming}, 
+Scrabble \cite{sheppard2002world} and 
+Checkers \cite{chellapilla1999evolving}. 
+Perhaps the most well-known feat in this field, 
+was the victory of Deep Blue over world chess champion Garry Kasparov in 1997.
+Another major achievement occurred in 2016 when DeepMind's AlphaGo defeated Lee Sedol in the game Go.
+
+Numerous AI methods have been employed to tackle challenges in games, 
+which include search algorithms, reinforcement- and deep learning, among others.
+Many of these application, however, are concerned with the performance of a singular agent.
+
+An emerging field, which explores the design of multi-agent systems, is swarm intelligence.
+It is heavily inspired by the observation of collective behaviour of social insects, 
+such as ants and bees.
+
+Ants, for instance, are shown to use pheromone trails to communicate indirectly with each other, 
+in tasks such as foraging food. 
+Bees, on the other hand inform others in the swarm of new locations with an abundance of food, 
+in a direct fashion through a specific dance.
+The collective behaviour is not limited to foraging alone, 
+as social insects are also known to build nests in cooperation.
+
+Accordingly, other animal societies also display a form of collective behaviours, 
+as can be seen in flocks of birds and schools of fish.
+
+Although the individual members of the swarm are simple beings, 
+together they are able to carry out complex tasks.
+A key aspect of the collective behaviours, 
+is that it emerges from relatively simple actions and interactions between individuals.
+
+As such, these decentralized collective behaviours have caught the eye of AI researchers.
+Thereforem, the design of applications in SI adhere to similar constraints.
+As opposed to more traditional approaches, 
+swarm intelligence does not make use of a sophisticated global controller to govern the behaviour of the system.
+Instead, just as in nature, individual controllers, 
+carrying out unsophisticated behaviours are employed, 
+in order to achieve the desired behaviour by meand of cooperation.
+
+\subsection{Research goals} \label{subsection:goals}
+In recent years, the application of swarm intelligence in games has seen more research focus.
+However, most research focuses on a limited number of traditional tasks that are to be performed by a swarm.
+Having a more complex environment, 
+with many actions available to the individual agents and the swarm has not seen much research as of yet.
+
+This thesis will address the following research goals
+
+\begin{enumerate}
+    \item We aim to motivate work on swarm intelligence (SI) in video games
+    \item We aim to apply SI to a novel developed multi-agent survival game
+    \item We aim to focus on self-organized behaviour for task allocation
+\end{enumerate}
+
+\subsection{Thesis structure} \label{subsection:structure}
+
+The thesis is organised as follows. 
+In chapter \ref{section:background} background information is presented.
+The chapter begins with a historic overview on Game AI, highlighting methods and major achievements.
+Furthermore, we show the difference between academia and industry with regards to Game AI.
+Additionally, the genre of Real Time Strategy (RTS) games is expanded upon.
+The importance of projection in games is next touched upon.
+
+Next, we define the basic concepts of swarm intelligence.
+These include basic behaviours such as \textbf{foraging}, \textbf{flocking}, and \textbf{aggregation}.
+This is followed by a description of self-organized behaviour, in particular task allocation.
+The driving force behind actions in a swarm, Finite State Machines (FSM) is explained next.
+
+Next in chapter \ref{section:methodology} the methods are presened. 
+First, the game objectives are described. 
+Next, the methods to build the game are described, which include the environment, camera and physics.
+\textcolor{blue}{---
+Further elements of the game are described in detail such as agents, enemies, and items.
+---}
+Finally, we describe the evaluation metric.
+
+The results are presened in chapter \ref{section:results}, which are discussed in chapter \ref{section:discussion}.
+The discussion will delve into the obtained results, coupling them to the research question which were defined in Section \ref{subsection:goals}.
+Furthermore, we will look into the limitations of the proposed methods and will offer suggestions for future work.
+
+Finally, the thesis is concluded in chapter \ref{section:conclusion}.

@@ -1,0 +1,29 @@
+\tikzset{
+    ->, 
+>=stealth, 
+node distance=5cm,
+every state/.style={thick, fill=gray!10},
+initial text=$ $,}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \node[state] (1) {$The\ swarm$};
+        \node[state, below right of=1] (2) {$Local \ rules$};
+        \node[state, below  of=1] (3) {$Tasks\ performance$};
+        \node[state, below left of=1] (4) {$Objectives$};
+        \draw
+        (1) edge[below, bend left] (2)
+        (2) edge[below, bend left] (3)
+        (3) edge[below, bend left] (4)
+        (4) edge[below, bend left] (1)
+    
+        ;
+    \end{tikzpicture}
+    \caption{Swarm representation}
+    \label{fig:swarm}
+\end{figure}
+
+% adapted from: Swarm Intelligence in Data Mining
+
+
